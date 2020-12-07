@@ -2,7 +2,7 @@
  * @Description:
  * @Author: xiaobai
  * @Date: 2020-12-03 16:35:48
- * @LastEditTime: 2020-12-05 14:27:16
+ * @LastEditTime: 2020-12-06 21:26:04
  * @LastEditors: Please set LastEditors
  * @Reference:
  */
@@ -15,7 +15,16 @@ import './plugins/element.js'
 import './assets/css/global.css'
 
 import axios from 'axios'
+// 配置请求的根路径
 axios.defaults.baseURL = 'https://www.liulongbin.top:8888/api/private/v1/'
+// axios 请求拦截
+axios.interceptors.request.use(config => {
+  // console.log(config)
+  // 为请求头对象添加 token 验证的 Authorization 字段
+  config.headers.Authorization = window.sessionStorage.getItem('token')
+  // 在最后必须 return config
+  return config
+})
 Vue.prototype.$http = axios
 
 Vue.config.productionTip = false
