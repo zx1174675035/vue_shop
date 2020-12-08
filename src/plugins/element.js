@@ -2,7 +2,7 @@
  * @Description:
  * @Author: xiaobai
  * @Date: 2020-12-03 16:38:27
- * @LastEditTime: 2020-12-07 18:32:07
+ * @LastEditTime: 2020-12-08 20:09:05
  * @LastEditors: Please set LastEditors
  * @Reference:
  */
@@ -31,7 +31,11 @@ import {
   Tooltip,
   Pagination,
   Dialog,
-  MessageBox
+  MessageBox,
+  Tag,
+  Tree,
+  Select,
+  Option
 } from 'element-ui'
 
 Vue.use(Button)
@@ -57,6 +61,10 @@ Vue.use(Switch)
 Vue.use(Tooltip)
 Vue.use(Pagination)
 Vue.use(Dialog)
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Select)
+Vue.use(Option)
 // 挂载弹窗提示组件
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm

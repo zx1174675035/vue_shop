@@ -2,7 +2,7 @@
  * @Description: 路由
  * @Author: xiaobai
  * @Date: 2020-12-03 16:35:48
- * @LastEditTime: 2020-12-06 19:13:56
+ * @LastEditTime: 2020-12-07 19:49:44
  * @LastEditors: Please set LastEditors
  * @Reference:
  */
@@ -12,6 +12,8 @@ import Login from '../components/Login.vue'
 import Home from '../components/Home.vue'
 import Welcome from '../components/Welcome.vue'
 import Users from '../components/user/Users.vue'
+import Rights from '../components/power/Rights.vue'
+import Roles from '../components/power/Roles.vue'
 
 Vue.use(VueRouter)
 
@@ -25,7 +27,9 @@ const router = new VueRouter({
       redirect: '/welcome',
       children: [
         { path: '/welcome', component: Welcome },
-        { path: '/users', component: Users }
+        { path: '/users', component: Users },
+        { path: '/rights', component: Rights },
+        { path: '/roles', component: Roles }
       ]
     }
   ]
