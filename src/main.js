@@ -2,7 +2,7 @@
  * @Description:
  * @Author: xiaobai
  * @Date: 2020-12-03 16:35:48
- * @LastEditTime: 2020-12-06 21:26:04
+ * @LastEditTime: 2020-12-10 18:32:41
  * @LastEditors: Please set LastEditors
  * @Reference:
  */
@@ -13,6 +13,7 @@ import './plugins/element.js'
 
 // 导入样式
 import './assets/css/global.css'
+import TreeTable from 'vue-table-with-tree-grid'
 
 import axios from 'axios'
 // 配置请求的根路径
@@ -28,6 +29,8 @@ axios.interceptors.request.use(config => {
 Vue.prototype.$http = axios
 
 Vue.config.productionTip = false
+
+Vue.component('tree-table', TreeTable)
 
 /** eslint-disable no-new */
 new Vue({

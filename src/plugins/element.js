@@ -2,7 +2,7 @@
  * @Description:
  * @Author: xiaobai
  * @Date: 2020-12-03 16:38:27
- * @LastEditTime: 2020-12-08 20:09:05
+ * @LastEditTime: 2020-12-10 21:38:13
  * @LastEditors: Please set LastEditors
  * @Reference:
  */
@@ -35,7 +35,8 @@ import {
   Tag,
   Tree,
   Select,
-  Option
+  Option,
+  Cascader
 } from 'element-ui'
 
 Vue.use(Button)
@@ -65,6 +66,7 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)
 // 挂载弹窗提示组件
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm

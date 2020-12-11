@@ -2,7 +2,7 @@
  * @Description: 路由
  * @Author: xiaobai
  * @Date: 2020-12-03 16:35:48
- * @LastEditTime: 2020-12-07 19:49:44
+ * @LastEditTime: 2020-12-09 20:23:30
  * @LastEditors: Please set LastEditors
  * @Reference:
  */
@@ -14,6 +14,7 @@ import Welcome from '../components/Welcome.vue'
 import Users from '../components/user/Users.vue'
 import Rights from '../components/power/Rights.vue'
 import Roles from '../components/power/Roles.vue'
+import Cate from '../components/goods/Cate.vue'
 
 Vue.use(VueRouter)
 
@@ -29,7 +30,8 @@ const router = new VueRouter({
         { path: '/welcome', component: Welcome },
         { path: '/users', component: Users },
         { path: '/rights', component: Rights },
-        { path: '/roles', component: Roles }
+        { path: '/roles', component: Roles },
+        { path: '/categories', component: Cate }
       ]
     }
   ]
