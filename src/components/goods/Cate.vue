@@ -3,7 +3,7 @@
  * @Author: xiaobai
  * @Date: 2020-12-09 20:17:27
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-12-12 19:58:40
+ * @LastEditTime: 2020-12-21 22:41:13
  * @Reference:
 -->
 <template>
@@ -232,7 +232,7 @@ export default {
       // 添加分类表单的验证规则对象
       addCateFormRules: {
         cat_name: [
-          { required: true, message: '亲输入分类名称', trigger: 'blur' }
+          { required: true, message: '请输入分类名称', trigger: 'blur' }
         ]
       },
       // 父级分类的列表
@@ -368,6 +368,7 @@ export default {
     // 修改商品分类并提交
     editCateInfo () {
       this.$refs.editCateFormRef.validate(async valid => {
+        console.log(valid)
         if (!valid) return
         const { data: res } = await this.$http.put('categories/' + this.editCateForm.cat_id, { cat_name: this.editCateForm.cat_name })
         if (res.meta.status !== 200) {

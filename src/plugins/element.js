@@ -2,7 +2,7 @@
  * @Description:
  * @Author: xiaobai
  * @Date: 2020-12-03 16:38:27
- * @LastEditTime: 2020-12-11 22:46:35
+ * @LastEditTime: 2020-12-18 20:05:40
  * @LastEditors: Please set LastEditors
  * @Reference:
  */
@@ -39,7 +39,12 @@ import {
   Cascader,
   Alert,
   Tabs,
-  TabPane
+  TabPane,
+  Step,
+  Steps,
+  Checkbox,
+  CheckboxGroup,
+  Upload
 } from 'element-ui'
 
 Vue.use(Button)
@@ -73,6 +78,12 @@ Vue.use(Cascader)
 Vue.use(Alert)
 Vue.use(Tabs)
 Vue.use(TabPane)
+Vue.use(Steps)
+Vue.use(Step)
+Vue.use(Checkbox)
+Vue.use(CheckboxGroup)
+Vue.use(Upload)
+
 // 挂载弹窗提示组件
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
