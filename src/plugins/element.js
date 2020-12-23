@@ -2,7 +2,7 @@
  * @Description:
  * @Author: xiaobai
  * @Date: 2020-12-03 16:38:27
- * @LastEditTime: 2020-12-18 20:05:40
+ * @LastEditTime: 2020-12-23 21:19:32
  * @LastEditors: Please set LastEditors
  * @Reference:
  */
@@ -44,7 +44,9 @@ import {
   Steps,
   Checkbox,
   CheckboxGroup,
-  Upload
+  Upload,
+  Timeline,
+  TimelineItem
 } from 'element-ui'
 
 Vue.use(Button)
@@ -83,6 +85,8 @@ Vue.use(Step)
 Vue.use(Checkbox)
 Vue.use(CheckboxGroup)
 Vue.use(Upload)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
 
 // 挂载弹窗提示组件
 Vue.prototype.$message = Message
